@@ -1,0 +1,85 @@
+
+<ion-slide-box class="col"   auto-play="false" does-continue="false" >
+  <ion-slide ng-controller='DashCtrl' >
+<ion-view view-title="Otaku">
+<div class="bar bar-header bar-dark">
+  <h1 class="title">宅言</h1>
+</div>  
+<!--   <ion-content class="padding"> -->
+  <ion-content >
+ <ion-refresher pulling-text="下拉获取宅言" on-refresh="doRefresh()"></ion-refresher>
+ <br/>
+<br/>
+<div class="list card" >
+
+
+  <div class="item item-body"  style="border-bottom:none">
+<br>
+<pre>&nbsp{{zhaiyan}}</pre>
+ <p>{{result}}</p>
+
+
+  </div>
+
+   <div style="border:none">
+
+    <h2 class="item .text-right" style="text-align: right;border:none">  {{show}}&nbsp&nbsp&nbsp&nbsp <p>{{source}}&nbsp&nbsp&nbsp&nbsp</p> </h2>
+  </div>
+   
+
+<!--   <div class="item item-body"  style="border-bottom:none">
+<br>
+<pre>&nbsp错的不是我 是世界</pre>
+ <p>{{img}}</p>
+  </div>
+
+   <div style="border:none">
+
+    <h2 class="item .text-right" style="text-align: right;border:none">  人渣城&nbsp&nbsp&nbsp&nbsp <p>nice boot&nbsp&nbsp&nbsp&nbsp</p> </h2>
+  </div> -->
+
+
+  <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item"  href="#" ng-click='hate()'>
+      <i class="icon ion-heart-broken"></i>
+      Hate
+    </a>
+
+    <a class="tab-item" href="#"   ng-click='colle()'>
+      <i class="icon ion-android-favorite"></i>
+      Collect
+    </a>
+  </div>
+
+</div>
+
+  </ion-content>
+
+ </ion-slide>
+
+  <ion-slide ng-controller='AccountCtrl'>
+<ion-view>
+  <div class="bar bar-header bar-dark" style='left:-5px'>
+  <h1 class="title">设置</h1>
+</div>  
+<br><br>
+
+<div class="list">
+
+  <a class="item item-icon-left" href="#/collection">
+    <i class="icon ion-ios-pricetags-outline"></i>
+    书签
+    <span class="badge badge-calm">{{count}}</span>
+  </a>
+
+    <ion-toggle  ng-model="settings.enableFriends" >
+        查看不喜欢
+    </ion-toggle>
+
+  <a class="item item-icon-left" href="#/hate"  ng-show="settings.enableFriends">
+    <i class="icon ion-android-sad"></i>
+   不喜欢
+  </a>
+
+</div>
+</ion-slide-box>

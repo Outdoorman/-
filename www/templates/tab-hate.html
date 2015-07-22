@@ -1,0 +1,21 @@
+<ion-view>
+    <div class="bar bar-header bar-dark"  bar-royal">
+            <a href="#/tab" class="button button-icon icon ion-arrow-left-c"></a>
+              <h1 class="title">你不喜欢的，可能只是说中了你心中所想</h1>
+        </div>
+<ion-content>
+<br></br>
+
+
+<ion-list  id='list'>
+<ion-item  class=" item-icon-left  item-remove-animate"  ng-repeat="res  in result"  type="item-text-wrap"  id="{{res.id}}"">
+        <h2>{{res.source}}</h2>
+        <pre>  {{res.zhaiyan}} </pre>
+        <ion-option-button class="button-assertive" ng-click="remove({{res.id}})">
+          Delete
+        </ion-option-button>
+</ion-item>
+
+</ion-list>
+</ion-content>
+</ion-view>
