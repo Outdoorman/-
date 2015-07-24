@@ -17,6 +17,7 @@ $scope.remove = function(id){
 var item= document.getElementById(id);
 item.remove();
 zhaiyan.remove(id).then(function(){
+$rootScope.count = $rootScope.count - 1;
  })
 };
 $scope.apply;
