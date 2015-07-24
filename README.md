@@ -6,3 +6,9 @@ Otaku
 有兴趣的可以一同交流
 
 说明慢慢补充. 
+
+
+ ![image](https://github.com/Outdoorman/Otaku_kotoha/blob/master/Screenshots/Screenshot_2015-07-20-19-42-47.png)
+ ![image](https://github.com/Outdoorman/Otaku_kotoha/blob/master/Screenshots/Screenshot_2015-07-20-19-42-59.png)
+ ![image](https://github.com/Outdoorman/Otaku_kotoha/blob/master/Screenshots/Screenshot_2015-07-20-19-43-40.png)
+ ![image](https://github.com/Outdoorman/Otaku_kotoha/blob/master/Screenshots/Screenshot_2015-07-20-19-43-49.png)
